@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/global.css">
+	<script src="js/jquery-2.0.3.min.js"></script>
+    <title>常见问题</title>
+	
+	<style>
+		.syx-container {
+			height:800px;
+		}
+		.syx-nopay-model {
+			padding:15px;
+			font-size:12px;
+		}
+		.syx-nopay-model p{
+			font-size:16px;
+			line-height:30px;
+		}
+</style>
+</head>
+<body>
+
+<!--<header class="syx-head">
+<a href="#"><i>常见问题</i></a>
+</header>-->
+<section class="syx-container">
+	    <div class="syx-nopay-model">
+	        <p>输入设备串号后，服务器会主动下发6位身份码给设备，以全屏弹窗形式呈现。</p>
+
+			<p>网络较差或第一次未接收到时，可点击输入框右侧重新获取6位身份码。</p>
+	    </div>
+</section>
+
+<script>
+	$(function(){
+		$('.syx-shop-top').on('click',
+			function(){			
+				$(this).next().toggle();
+				$(this).toggleClass('c-color-blue');
+				$(this).children().children().children('.drop-down').toggleClass('c-btn-top').toggleClass('c-btn-down');
+			}
+		);
+	});
+</script>
+</body>
+</html>
+
+

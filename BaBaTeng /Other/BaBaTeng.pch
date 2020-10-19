@@ -1,0 +1,135 @@
+//
+//  BaBaTeng.pch
+//  BaBaTeng
+//
+//  Created by liu on 16/10/10.
+//  Copyright © 2016年 ShenzhenHiTech. All rights reserved.
+//
+
+#ifdef __OBJC__
+#import "XZHeaderFile.h"
+
+#import "UIView+Frame.h"
+#import "UIImage+Extension.h"
+#define CZKeyWindow [UIApplication sharedApplication].keyWindow
+
+
+#define KeyOfApPasswordPrefix @"AP_PWD_"
+#define KeyOfApHiddenPrefix @"AP_Hidden_"
+#define KeyOfAlbumTitle @"AlbumTitle"
+#define KeyOfAlbumIndentify @"AlbumIndentify"
+
+#define PageSizeOfCloudData 20
+
+#define MusicQueueFetchSize 50
+#define PlayingQueueSetSize 60
+
+#define DOWNLOAD_BTN_ENABLE 0
+#define DOWNLOAD_BTN_DISABLE 1
+#define MsgOfVolumeChange   @"MsgOfVolumeChange"
+#define KeyOfcurrentVolume  @"KeyOfcurrentVolume"
+#define KeyOfmaxVolume      @"KeyOfmaxVolume"
+
+#define MsgOfDownloadState   @"MsgOfDownloadState"
+#define KeyOfDownloadState  @"KeyOfDownloadState"
+#define KeyOfDownloadName  @"KeyOfDownloadName"
+
+#import <Foundation/Foundation.h>
+
+#import <Hyphenate/Hyphenate.h>
+
+#import "EaseUI.h"
+
+#import "ChatDemoUIDefine.h"
+
+#define DEMO_CALL 1
+
+#import "TKHelperUtil.h"
+#import "TKTheme.h"
+
+#import "TKMacro.h"
+#import "TKEnumHeader.h"
+
+#import "TKAlertView.h"
+
+#import "TKEduNetManager.h"
+#import "TKUtil.h"
+#import "TXSakuraKit.h"
+#import "TKEduRoomProperty.h"
+
+#import <TKRoomSDK/TKRoomSDK.h>
+
+#import <TKWhiteBoard/TKWhiteBoard.h>
+
+#import "UIView+TKExtension.h"
+#import "UIImageView+TKExtension.h"
+#import "UIImage+TKExtension.h"
+#import "UIView+TKRedDot.h"
+#import "UIControl+TKClickedOnce.h"
+#import "TKRoomModel.h"
+#import "TKModelToJson.h"
+#import "TKSortTool.h"
+#import "TKNotificationHeader.h"
+#import "UIImageView+WebCache.h"
+
+#import <UIKit/UIKit.h>
+
+
+#import "InfoManager.h"
+#import "NSDictionary+JsonBase64.h"
+#import "UCConst.h"
+#import "GloalDefine.h"
+#import "ASIHTTPRequest.h"
+
+
+#import "UCSIMSDK.h"
+#import "UCSVoipDBManager.h"
+#import "MBProgressHUD+Add.h"
+#import "NSString+UCLog.h"
+
+
+#import "Reachability.h"
+#import "WatchDog.h"
+
+/**
+ @author WLS, 15-12-08 16:12:16
+ 
+ 导入voip功能类
+ */
+#import "UCSFuncEngine.h"
+#import "UCSVOIPViewEngine.h"
+#import "UCSChangeTheViewController.h"
+#import "UCSUserDefaultManager.h"
+//#import "GTMBase64.h"
+
+#import "AppDelegate.h"
+
+#define ScreenFitWidth [UIScreen mainScreen].bounds.size.width / 375
+#define ScreenFitHeight [UIScreen mainScreen].bounds.size.height / 667
+
+//播放器
+#import "MJExtension.h"
+#import "Masonry.h"
+
+#define scrnW [UIScreen mainScreen].bounds.size.width
+#define scrnH [UIScreen mainScreen].bounds.size.height
+
+#ifdef DEBUG
+#define ICLog(format, ...)    NSLog(format, ##__VA_ARGS__)
+#else
+#define ICLog(format, ...)
+#endif
+// ...表示宏定义的可变参数
+
+// __VA_ARGS__:表示函数里面的可变参数
+#ifdef DEBUG // 调试
+
+#define CZLog(...) NSLog(__VA_ARGS__)
+
+#else // 发布
+
+#define CZLog(...)
+
+#endif
+
+#endif

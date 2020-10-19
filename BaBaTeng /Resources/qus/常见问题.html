@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/global.css">
+	<script src="js/jquery-2.0.3.min.js"></script>
+    <title>常见问题</title>
+	
+	<style>
+	.syx-nopay-model{padding:0px 10px}
+	.syx-shop-top td {padding:15px 0;font-size:16px;width:90%;}
+	.drop-down-list td{width:10%;}
+	.c-btn-down{background:url('images/buten_zhankai.png') no-repeat left center;}
+	.c-btn-top{background:url('images/buten_shoushuo.png') no-repeat left center}
+	.c-btn-down,.c-btn-top{display:block;width:20px;cursor:pointer}
+	.drop-down-list{background:#cef0ff}
+	.drop-down-list p{padding:3px;line-height:25px;font-size:14px;}
+	.drop-down-list span{text-indent:50px}
+</style>
+</head>
+<body>
+
+<!--<header class="syx-head">
+<a href="#"><i>常见问题</i></a>
+</header>-->
+<section class="syx-container">
+	    <div class="syx-cover-container">
+	        <a href="#" style="height: 181px;"><img src="images/bg_chanjianwenti_bg1@2x.png" style="max-height: 220px" height="220"> </a>
+	    </div>
+
+	    <div class="syx-nopay-model">
+        <div class="syx-shop border-bottom">
+            <table class="syx-shop-top border-bottom" width="100%">
+                <tr>
+                    <td>Q ：无法开机怎么办？</td>
+                    <td class="drop-down c-btn-down">&nbsp;</td>
+                </tr>
+            </table>
+
+            <table class="drop-down-list" width="100%" style="display:none">
+                <tr>
+                    <td>
+                        <p>A ：1、请检查机器人背后电源开关是否开启，保证机器人电源处于开启状态；<br />2、请检查机器人是否有电(长期不适用会导致内置锂电池电量放空)，并正确充电。</p>
+                    </td>
+
+                </tr>
+            </table>
+			
+			<table class="syx-shop-top border-bottom" width="100%">
+                <tr>
+                    <td>Q ：无法充电怎么办？</td>
+                    <td class="drop-down c-btn-down">&nbsp;</td>
+                </tr>
+            </table>
+
+            <table class="drop-down-list" width="100%" style="display:none">
+                <tr>
+                    <td>
+                        <p>A ：请检查USB线是否接插正确，如接插正确仍无法充电，尝试更换数据线/充电头/电脑USB接口(建议使用电压为5V，电流为1A的充电头)。</p>
+                    </td>
+
+                </tr>
+            </table>
+			
+			<table class="syx-shop-top border-bottom" width="100%">
+                <tr>
+                    <td>Q ：机器人是否可以在不同的WiFi环境下使用？</td>
+                    <td class="drop-down c-btn-down">&nbsp;</td>
+                </tr>
+            </table>
+
+            <table class="drop-down-list" width="100%" style="display:none">
+                <tr>
+                    <td>
+                        <p>A ：机器人可以在不同WiFi环境中使用，更换网络环境时，根据指引操作为机器人配置新的网络即可。机器人有记忆WiFi功能，已配置过的网络，可自动连接。</p>
+                    </td>
+
+                </tr>
+            </table>
+			
+			<table class="syx-shop-top border-bottom" width="100%">
+                <tr>
+                    <td>Q ：开机后没有声音？</td>
+                    <td class="drop-down c-btn-down">&nbsp;</td>
+                </tr>
+            </table>
+
+            <table class="drop-down-list" width="100%" style="display:none">
+                <tr>
+                    <td>
+                        <p>A ：1、请检查机器人是否开机成功，并正确开机；
+						<br />2、请检查机器人音量，并将音量调至最大；
+						<br />3、如果开机不成功，可能是机器人电量不足，请尝试为机器人充电1小时候重新开机</p>
+                    </td>
+
+                </tr>
+            </table>
+			
+			<table class="syx-shop-top border-bottom" width="100%">
+                <tr>
+                    <td>Q ：手机点播某些儿歌故事后，机器人很久都没有反应怎么办？</td>
+                    <td class="drop-down c-btn-down">&nbsp;</td>
+                </tr>
+            </table>
+
+            <table class="drop-down-list" width="100%" style="display:none">
+                <tr>
+                    <td>
+                        <p>A ：部分资源由于内容比较多，文件相对较大，因此机器人下载时间会相应变长，此时只要稍作等待，曲目即可正常播放。</p>
+                    </td>
+
+                </tr>
+            </table>
+			
+			<table class="syx-shop-top border-bottom" width="100%">
+                <tr>
+                    <td>Q ：如何联系客服？</td>
+                    <td class="drop-down c-btn-down">&nbsp;</td>
+                </tr>
+            </table>
+
+            <table class="drop-down-list" width="100%" style="display:none">
+                <tr>
+                    <td>
+                        <p>A ：客户服务热线：400-166-8398
+						<br /><span>工作时间：周一至周五09:00-18:00</span></p>
+                    </td>
+
+                </tr>
+            </table>
+        </div>   
+    </div>
+</section>
+
+<script>
+	$(function(){
+		$('.syx-shop-top').on('click',
+			function(){			
+				$(this).next().toggle();
+				$(this).toggleClass('c-color-blue');
+				$(this).children().children().children('.drop-down').toggleClass('c-btn-top').toggleClass('c-btn-down');
+			}
+		);
+	});
+</script>
+</body>
+</html>
+
+
