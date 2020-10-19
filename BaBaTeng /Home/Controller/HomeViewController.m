@@ -85,7 +85,7 @@ static HomeViewController *homeViewController;
     
     homeViewController = self;
     
-    self.title = @"我的设备";
+    self.title = @"我的";
     self.navigationItem.leftBarButtonItem = nil;
     self.devicearr = [[NSMutableArray alloc] init];
     self.ADImageArray = [[NSMutableArray alloc] init];
